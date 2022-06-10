@@ -14,19 +14,19 @@
         "API_ID": {10299554
             "description": "Get this value from my.telegram.org"
         },
-        "API_HASH": {0f4d3f3e6936b856839784333ac5ef27
+        "API_HASH": {
             "description": "Get this value from my.telegram.org"
         },
-        "TOKEN": {5564353391:AAELDHRDgQFy8xWo55mrgM6CrgoAMPYuzbo
+        "TOKEN": {
             "description": "Get this from @BotFather"
         },
-        "USERNAME": {2146648404
+        "USERNAME": {
             "description": "Get this from Owner id"
         }
     },
     "buildpacks": [
         { 
-            "url": "https://dashboard.heroku.com/apps/rocky-meadow-43308"
+            "url": "https:"
         }
     ],
     "formation": {
