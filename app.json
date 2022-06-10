@@ -11,22 +11,22 @@
     "website": "https://t.me/hababammsinifi",
     "success_url": "https://t.me/evrendestek",
     "env": {
-        "API_ID": {
+        "API_ID": {10299554
             "description": "Get this value from my.telegram.org"
         },
-        "API_HASH": {
+        "API_HASH": {0f4d3f3e6936b856839784333ac5ef27
             "description": "Get this value from my.telegram.org"
         },
-        "TOKEN": {
+        "TOKEN": {5564353391:AAELDHRDgQFy8xWo55mrgM6CrgoAMPYuzbo
             "description": "Get this from @BotFather"
         },
-        "USERNAME": {
+        "USERNAME": {2146648404
             "description": "Get this from Owner id"
         }
     },
     "buildpacks": [
         { 
-            "url": "heroku/python"
+            "url": "https://dashboard.heroku.com/apps/rocky-meadow-43308"
         }
     ],
     "formation": {
