@@ -11,16 +11,16 @@
     "website": "https://t.me/hababammsinifi",
     "success_url": "https://t.me/evrendestek",
     "env": {
-        "API_ID": { "10299554"
+        "API_ID": { ""
+            "description": "Get this value from my.telegram.org"
+ 
+        "API_HASH": { ""
             "description": "Get this value from my.telegram.org"
         },
-        "API_HASH": { "0f4d3f3e6936b856839784333ac5ef2"
-            "description": "Get this value from my.telegram.org"
-        },
-        "TOKEN": { "5564353391:AAHtj_83qMU5Bgi2LJJynYvuDzICXfZiatw"
+        "TOKEN": { ""
             "description": "Get this from @BotFather"
         },
-        "USERNAME": { "kelime_evrenibot"
+        "USERNAME": { ""
             "description": "Get this from Owner id"
         }
     },
