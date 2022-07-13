@@ -22,6 +22,10 @@
     "USERNAME": {
       "description": "Kullanıcı adınızı giriniz.",
       "value": ""
+    },
+    "OWNER_ID": {
+      "description": "Bot Sahibinin İD girin.",
+      "value": ""
     }
   },
   "buildpacks": [{
