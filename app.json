@@ -1,38 +1,30 @@
 {
-    "name": "kelime evreni",
-    "description": "Telegram kelime bilgi oyun",
-    "keywords": [
-        "telegram",
-        "bilgi",
-        "kelime",
-        "bot"
-    ],
-    "repository": "https://github.com/Efsane2323/kelime",
-    "website": "https://t.me/hababammsinifi",
-    "success_url": "https://t.me/evrendestek",
-    "env": {
-        "API_ID": { ""
-            "description": "Get this value from my.telegram.org"
- 
-        "API_HASH": { ""
-            "description": "Get this value from my.telegram.org"
-        },
-        "TOKEN": { ""
-            "description": "Get this from @BotFather"
-        },
-        "USERNAME": { ""
-            "description": "Get this from Owner id"
-        },
+  "name": "Kelime Evreni",
+  "logo":"https://telegra.ph/file/dfa517fd00b6ca5f7ac9.jpg",
+  "description": "Telegram kelime bilgi oyun",
+  "env": {
+    "BOT_TOKEN": {
+      "description": "bot token girin.",
+      "value": ""
+    },
+    "API_ID": {
+      "description": "@otomytelegrambot dan api hash api id alınız.",
+      "value": ""
+    },
+    "API_HASH": {
+      "description": "@otomytelegrambot dan api hash api id alınız.",
+      "value": ""
+    },
+    "TOKEN": {
+      "description": "@botfather den aldığınız tokeni giriniz",
+      "value": ""
+    },
+    "USERNAME": {
+      "description": "Kullanıcı adınızı giriniz.",
+      "value": ""
     }
-    "buildpacks": [
-        { 
-            "url": "https:"
-        }
-    ],
-    "formation": {
-        "worker": {
-            "quantity": 1,
-            "size": "free"
-        }
-    }
+  },
+  "buildpacks": [{
+    "url": "https://github.com/heroku/heroku-buildpack-python.git"
+  }]
 }
