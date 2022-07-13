@@ -1,38 +1,56 @@
 {
-    "name": "kelime evreni",
-    "description": "Telegram kelime bilgi oyun",
+    "name": "Telegram kelime bot",
+    "description": "Telegram kelimeyi turet oyun botu v.4.",
+    "logo": "https://telegra.ph/file/7b4ec1fc601a76415b82b.jpg",
     "keywords": [
         "telegram",
-        "bilgi",
+        "oyun",
         "kelime",
-        "bot"
+        "game",
+        "group"
     ],
-    "repository": "https://github.com/Efsane2323/kelime",
-    "website": "https://t.me/hababammsinifi",
-    "success_url": "https://t.me/evrendestek",
-    "env": {
-        "API_ID": { ""
-            "description": "Get this value from my.telegram.org"
- 
-        "API_HASH": { ""
-            "description": "Get this value from my.telegram.org"
-        },
-        "TOKEN": { ""
-            "description": "Get this from @BotFather"
-        },
-        "USERNAME": { ""
-            "description": "Get this from Owner id"
-        }
-    },
-    "buildpacks": [
-        { 
-            "url": "https:"
-        }
-    ],
+    "repository": "https://github.com/MacroKeke/kelimebot",
+    "success_url": "https://t.me/majesteler",
+    "image": "heroku/python",
     "formation": {
         "worker": {
             "quantity": 1,
             "size": "free"
         }
-    }
+    },
+    "env": {
+        "API_ID": {
+            "description": "my.telegram.org dan api id alin.",
+            "value": "",
+            "required": true
+        },
+        "API_HASH": {
+            "description": "my.telegram.org dan api hash alin.",
+            "value": "",
+            "required": true
+        },
+        "TOKEN": {
+            "description": "@BotFather in versigi bot jetonunuz.",
+            "value": "",
+            "required": true
+        },
+        "USERNAME": {
+            "description": "Sahip Kullanici adi."
+            "value": "",
+            "required": true
+        },
+        "OWNER_ID": {
+            "description": "Sahip olarak eklenmesini istediginiz kullanici id leri [birden çok ise boşlukla yazın]",
+            "value": "",
+            "required": true
+        }
+    },
+    "buildpacks": [
+        {
+            "url": "https://github.com/jonathanong/heroku-buildpack-ffmpeg-latest"
+        },
+        {
+            "url": "heroku/python"
+        }
+    ]
 }
