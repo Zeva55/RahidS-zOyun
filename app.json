@@ -22,8 +22,8 @@
         },
         "USERNAME": { ""
             "description": "Get this from Owner id"
-        }
-    },
+        },
+    }
     "buildpacks": [
         { 
             "url": "https:"
