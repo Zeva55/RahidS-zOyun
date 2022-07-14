@@ -19,7 +19,6 @@ API_ID = ""
 API_HASH = "0ff27"
 TOKEN = "DzICXfZiatw" 
 USERNAME = ""
-OWNER_ID =
 
 
 
@@ -49,4 +48,5 @@ rating = {}
 # !!!!!!!!!!!!!! DEĞİŞTİR KESİNLİKLE !!!!!!!!!!!!!!!!
 #      SAHİBİN USER ID'Sİ
 OWNER_ID = 
+
 
