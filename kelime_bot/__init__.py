@@ -42,3 +42,8 @@ oyun = {}
 rating = {}
 
 
+
+# !!!!!!!!!!!!!! DEĞİŞTİR KESİNLİKLE !!!!!!!!!!!!!!!!
+#      SAHİBİN USER ID'Sİ
+OWNER_ID = ""
+
