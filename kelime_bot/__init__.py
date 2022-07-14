@@ -43,7 +43,10 @@ rating = {}
 
 
 
+
+
 # !!!!!!!!!!!!!! DEĞİŞTİR KESİNLİKLE !!!!!!!!!!!!!!!!
 #      SAHİBİN USER ID'Sİ
-OWNER_ID = ""
+OWNER_ID= "5077397380"
+
 
