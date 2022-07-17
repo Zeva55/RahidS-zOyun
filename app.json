@@ -1,12 +1,8 @@
 {
   "name": "Kelime Evreni",
-  "logo":"https://telegra.ph/file/dfa517fd00b6ca5f7ac9.jpg",
+  "logo": "https://telegra.ph/file/dfa517fd00b6ca5f7ac9.jpg",
   "description": "Telegram kelime bilgi oyun",
   "env": {
-    "BOT_TOKEN": {
-      "description": "bot token girin.",
-      "value": ""
-    },
     "API_ID": {
       "description": "@otomytelegrambot dan api hash api id alınız.",
       "value": ""
@@ -28,7 +24,9 @@
       "value": ""
     }
   },
-  "buildpacks": [{
-    "url": "https://github.com/heroku/heroku-buildpack-python.git"
-  }]
+  "buildpacks": [
+    {
+      "url": "https://github.com/heroku/heroku-buildpack-python.git"
+    }
+  ]
 }

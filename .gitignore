@@ -1,0 +1,17 @@
+config.env
+.DS_Store/
+__pycache__/
+.mypy_cache/
+.pytest_cache/
+.venv/
+downloads/
+.vscode/
+*.check
+*.session
+*.session-journal
+.progress
+.idea/
+*secret*
+*.log
+*.tmp
+*.bak
