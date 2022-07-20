@@ -21,27 +21,32 @@ keyboard = InlineKeyboardMarkup([
 
 
 START = """
-**🔮 Merhaba, Kelimeleri tersten bulma oyununa hoş geldin..**
+**🔮 Merhaba, Majeste Kelime Bota hoş geldin bu bot ile Kelime türet oyunu veya kelime anlatmaca oynayabilirsin..**
 
 ➤ Bilgi için 👉 /help Tıklayın. Komutlar kolay ve basittir. 
 """
 
 HELP = """
 **✌️ Komutlar Menüsüne Hoşgeldiniz.**
-/game - Oyunu başlatmak için..
-/pass - Üç adet hakkınız mevcut, oyunu geçmek için.. 
+/bulmaca - Kelime Anlatma Oyunu Başlatır.
+/ogretmen - Kelime Anlatma Oyununda Ogretmen Olma.. 
+/puan - Oyuncular arasındaki rekabet bilgisi..
+
+
+/game - Kelime Türet oyunu başlatır.. 
+/pass - kelimeyi Pass geçer.
 /skor - Oyuncular arasındaki rekabet bilgisi..
-/cancel - Oyundan çıkmak için gerekli olan komuttur.. 
+/cancel kelime türet oyununu bitirir.
 """
 
 # Komutlar. 
 @Client.on_message(filters.command("start"))
 async def start(bot, message):
-  await message.reply_photo("https://i.ibb.co/K6QTywd/images-17.jpg",caption=START,reply_markup=keyboard)
+  await message.reply_photo("https://telegra.ph/file/d515a91bead7784328772.jpg",caption=START,reply_markup=keyboard)
 
 @Client.on_message(filters.command("help"))
 async def help(bot, message):
-  await message.reply_photo("https://i.ibb.co/K6QTywd/images-17.jpg",caption=HELP) 
+  await message.reply_photo("https://telegra.ph/file/3a177f6d7b5b5a3d0548f.jpg",caption=HELP) 
 
 # Oyunu başlat. 
 @Client.on_message(filters.command("game")) 
