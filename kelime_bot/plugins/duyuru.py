@@ -1,79 +1,63 @@
-import os, logging, asyncio
-from telethon import Button
-from telethon import TelegramClient, events
-from telethon.sessions import StringSession
-from telethon.tl.types import ChannelParticipantsAdmins
-import time
+from pyrogram import Client
+from pyrogram import filters
+from pyrogram.types import Message
+from time import sleep
+from kelime_bot.plugins.yakalayıcı import data_message
+from kelime_bot import OWNER_ID
 
-logging.basicConfig(
-    level=logging.INFO,
-    format='%(name)s - [%(levelname)s] - %(message)s'
-)
-LOGGER = logging.getLogger(__name__)
-
-api_id = "9248715"
-api_hash = "a9c1288681c2d3265175ff96c619d064"
-bot_token = "5472094867:AAGUb4aGn0bFyNKUTZlAgn7s1JozxpFifnY"
-
-client = TelegramClient('client', api_id, api_hash)
-client.start(bot_token=bot_token)
-
-ozel_list = [5539575339]
-grup_sayi = []
-etiketuye = []  
-
-@client.on(events.NewMessage(pattern='^/reload ?(.*)'))
-async def chatid(event):
-    global grup_sayi
-
-@client.on(events.NewMessage())
-async def chatid(event):
-  global etiketuye
-  if event.is_group:
-    if event.chat_id in grup_sayi:
-      pass
+@Client.on_message(filters.command(["duyuru"], [".", "/"]) & filters.user(OWNER_ID))
+async def duyuru(c:Client, m:Message):
+    chats = await c.get_messages(OWNER_ID, data_message.message.message_id)
+    chats_list = chats.text.split()
+        
+        
+    #----> Mesaj içeriği <----
+    mesaj = ""
+    if m.reply_to_message is not None:
+        mesaj = m.reply_to_message.text
     else:
-      grup_sayi.append(event.chat_id)     
+        mesaj = m.text[8:]
+    await c.send_message(m.chat.id,f"**Gönerilecek Grup Sayısı:  {len(chats_list)}\nMesajınız:**\n\n__{mesaj}__")
 
-@client.on(events.NewMessage(pattern='^/play@denemebot?(.*)'))
-async def chatid(event):
-    global grup_sayi
 
-@client.on(events.NewMessage())
-async def chatid(event):
-  global etiketuye
-  if event.is_group:
-    if event.chat_id in grup_sayi:
-      pass
+
+    #----> Gönderme İşlemi <----
+    bas =await c.send_message(m.chat.id, "**Duyuru Yapılmaya Başladı.**")
+    for chat in chats_list:
+        try:
+            await c.send_message(chat, mesaj, disable_web_page_preview=True)
+            await bas.edit(f"**Duyuru Yapılmaya Başladı.**\n\nGönderildi: {chat}")
+        except:
+            pass
+        sleep(2)
+    await c.send_message(m.chat.id, "**Duyuru İşlemi Bitti Tüm Gruplara Duyurunuz Yollandı.**")
+    
+    
+    
+    
+
+@Client.on_message(filters.command(["fduyuru"], [".", "/"]) & filters.user(OWNER_ID))
+async def fduyuru(c:Client, m:Message):
+    chats = await c.get_messages(OWNER_ID, data_message.message_id)
+    chats_list = chats.text.split()
+        
+
+    #----> Mesaj içeriği <----
+    if m.reply_to_message is not None:
+        message_id = m.reply_to_message.message_id
+        mesaj = "t.me/" + str(m.chat.username) + "/" + str(message_id)
     else:
-      grup_sayi.append(event.chat_id)     
-
-      
-@client.on(events.NewMessage(pattern='^/statik ?(.*)'))
-async def son_durum(event):
-    global grup_sayi,ozel_list
-    sender = await event.get_sender()
-    if sender.id not in ozel_list:
-      return
-    await event.respond(f"**botun grup sayısı 🧐**\n\nToplam Grup: `{len(grup_sayi)}`")
+        return m.reply("**Mesajı yönlendirme şeklinde duyuru yapmak için yanıtlayın !!**")
+    await c.send_message(m.chat.id,f"**Gönerilecek Grup Sayısı:  {len(chats_list)}\nMesajınız: [Tıkla]({mesaj})**", disable_web_page_preview=True)
 
 
-@client.on(events.NewMessage(pattern='^/reklam ?(.*)'))
-async def reklam(event):
- 
-  global grup_sayi,ozel_list
-  sender = await event.get_sender()
-  if sender.id not in ozel_list:
-    return
-  reply = await event.get_reply_message()
-  await event.respond(f"Toplam {len(grup_sayi)} Gruba'a reklam gönderiliyor...")
-  for x in grup_sayi:
-    try:
-      await client.send_message(x,f"**📣 @deepkral **\n\n{reply.message}")
-    except:
-      pass
-  await event.respond(f"Gönderildi reklamınız.")
-
-
-print(">> Bot çalıyor merak etme  <<")
-client.run_until_disconnected() 
+    #----> Gönderme İşlemi <----
+    bas = await c.send_message(m.chat.id, "**Duyuru Yapılmaya Başladı.**")
+    for chat in chats_list:
+        try:
+            await c.forward_messages(chat,m.chat.id, message_id)
+            await bas.edit(f"**Duyuru Yapılmaya Başladı.**\n\nGönderildi: {chat}")
+        except:
+            pass
+        sleep(2)
+    await c.send_message(m.chat.id, "**Duyuru İşlemi Bitti Tüm Gruplara Duyurunuz Yollandı.**")
