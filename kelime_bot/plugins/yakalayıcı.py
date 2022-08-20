@@ -38,7 +38,7 @@ async def buldu(c:Client, m:Message):
                 oyun[m.chat.id]["kelime"] = kelime_sec()
                 oyun[m.chat.id]["round"] = oyun[m.chat.id]["round"] + 1
                 
-                if not oyun[m.chat.id]["round"] <= 60:
+                if not oyun[m.chat.id]["round"] <= 100:
                     siralama = []
                     for i in oyun[m.chat.id]["oyuncular"]:
                         siralama.append(f"{i} :   {oyun[m.chat.id]['oyuncular'][i]}  Bal")
