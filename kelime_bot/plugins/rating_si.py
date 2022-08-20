@@ -11,7 +11,7 @@ async def ratingsa(c:Client, m:Message):
 
 """
     eklenen = 50
-    puanlar = []
+    puanlar = [50]
     for kisi in rating:
         puanlar.append(rating[kisi])
     puanlar.sort(reverse = True)
