@@ -14,7 +14,7 @@ keyboard = InlineKeyboardMarkup([
         InlineKeyboardButton("➕ Grubuna Ekle", url=f"http://t.me/kingsozBot?startgroup=new")
     ],
     [
-        InlineKeyboardButton(" 🇦🇿 Sahibim", url="t.me/MajesteSahip"),
+        InlineKeyboardButton(" 🇦🇿 Sahibim", url="t.me/nihat_33"),
         InlineKeyboardButton("💬 Chat", url="t.me/king_sohbet_33"),
     ]
 ])
