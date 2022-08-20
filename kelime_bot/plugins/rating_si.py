@@ -10,8 +10,8 @@ async def ratingsa(c:Client, m:Message):
     metin = """📝 Qlobal Qrup Reytinqi :
 
 """
-    eklenen = 50
-    puanlar = [50]
+    eklenen = 0
+    puanlar = []
     for kisi in rating:
         puanlar.append(rating[kisi])
     puanlar.sort(reverse = True)
