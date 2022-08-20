@@ -4,10 +4,10 @@ from pyrogram import filters
 from pyrogram.types import Message
 
 
-@Client.on_message(filters.command("skor"))
+@Client.on_message(filters.command("reytinq"))
 async def ratingsa(c:Client, m:Message):
     global rating
-    metin = """📝 Küresel Grup Derecelendirmesi :
+    metin = """📝 Qlobal Qrup Reytinqi :
 
 """
     eklenen = 0
@@ -18,7 +18,7 @@ async def ratingsa(c:Client, m:Message):
     for puan in puanlar:
         for kisi in rating:
             if puan == rating[kisi]:
-                metin += f"**{kisi}** : {puan}  Puan\n"
+                metin += f"**{kisi}** : {puan}  Xallar\n"
                 eklenen += 1
                 if eklenen == 20:
                     break
