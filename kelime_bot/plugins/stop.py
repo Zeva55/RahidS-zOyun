@@ -9,7 +9,7 @@ from kelime_bot import *
 
 
 
-@Client.on_message(filters.command("cancel") & ~filters.private & ~filters.channel)
+@Client.on_message(filters.command("dayan") & ~filters.private & ~filters.channel)
 async def stop(c:Client, m:Message):
     global oyun
     
@@ -21,6 +21,6 @@ async def stop(c:Client, m:Message):
     for i in siralama:
         siralama_text += i + "\n"     
     
-    await c.send_message(m.chat.id, f"**{m.from_user.mention}** Tarafından Oyun Bitirildi\n\nYeni Oyuna Başlamak İçin /game Yaza Bilirsiniz\n\n 📝 Puan Listesi  :\n\n{siralama_text}")
+    await c.send_message(m.chat.id, f"**{m.from_user.mention}** Tərəfindən Oyun dayandırıldı\n\nYeni Oyuna Başlamaq Üçün /oyna Yaza BBilərsini\n\n 📝 Xallar səyfəsi  :\n\n{siralama_text}")
     oyun[m.chat.id] = {}
     
