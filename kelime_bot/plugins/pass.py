@@ -19,7 +19,7 @@ async def passs(c:Client, m:Message):
         aktif = False
 
     if aktif:
-        if oyun[m.chat.id]["kec"] < 300:
+        if oyun[m.chat.id]["kec"] < 30:
             oyun[m.chat.id]["kec"] += 1
             await c.send_message(m.chat.id,f"❗ Sizin tam yol haqqınız var!\n➡️ sözü kecdim !\n✏️ Doğru söz : **<code>{oyun[m.chat.id]['kelime']}</code>**")
             
@@ -34,9 +34,9 @@ async def passs(c:Client, m:Message):
                 kelime_list+= harf + " "
             
             text = f"""
-🎯 Raund : {oyun[m.chat.id]['round']}/60 
+🎯 Raund : {oyun[m.chat.id]['round']}/100 
 📝 Söz :   <code>{kelime_list}</code>
-💰 Qazandığın Xal : 1
+💰 Qazandığın Xal : 50
 🔎 İ𝗉𝗎𝖼𝗎 : 1. {oyun[m.chat.id]["kelime"][0]}
 ✍🏻 𝖴𝗓𝗎𝗇𝗅uq: {int(len(kelime_list)/2)} 
 
