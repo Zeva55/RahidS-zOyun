@@ -22,7 +22,7 @@ async def buldu(c:Client, m:Message):
     try:
         if m.chat.id in oyun:
             if m.text.lower() == oyun[m.chat.id]["kelime"]:
-                await c.send_message(m.chat.id,f"✨ Tebrikler !\n**{m.from_user.mention}** \n**<code>{oyun[m.chat.id]['kelime']}</code>** , Sözünü Buldu ✅")
+                await c.send_message(m.chat.id,f"✨ Tebrikler !\n**{m.from_user.mention}** \n**<code>{oyun[m.chat.id]['kelime']}</code>** , Sözünü Tapdi ✅")
                 if f"{m.from_user.mention}" in rating:
                     rating[f"{m.from_user.mention}"] += 1
                 else:
@@ -47,7 +47,7 @@ async def buldu(c:Client, m:Message):
                     for i in siralama:
                         siralama_text += i + "\n"
                     
-                    return await c.send_message(m.chat.id,f"✅ Oyun Bitti✓ \n\n📝 Puan :\n\n{siralama_text}\n\n Yeni Oyuna Başlamak İçin /game Yaza Bilirsiniz !")
+                    return await c.send_message(m.chat.id,f"✅ Oyun Bitti✓ \n\n📝 Puan :\n\n{siralama_text}\n\n Yeni Oyuna Başlamaq Üçün /oyna Yaza Bilərsiniz !")
                 
                 
                 
@@ -58,13 +58,13 @@ async def buldu(c:Client, m:Message):
                     kelime_list+= harf + " "
             
                 text = f"""
-🎯 Raund : {oyun[m.chat.id]['round']}/60 
+🎯 Raund : {oyun[m.chat.id]['round']}/100 
 📝 Söz :   <code>{kelime_list}</code>
-💰 Kazandığınız Puan: 1
+💰 Qazandığın Xal : 50
 🔎 İpucu: 1. {oyun[m.chat.id]["kelime"][0]}
-✍🏻 Uzunluk : {int(len(kelime_list)/2)} 
+✍🏻 Uzunluq : {int(len(kelime_list)/2)} 
 
-✏️ Karışık harflerden doğru kelimeyi bulun
+✏️ Qarışıq hərflərdən ibarət sözü tapın 
                         """
                 await c.send_message(m.chat.id, text)
     except KeyError:
