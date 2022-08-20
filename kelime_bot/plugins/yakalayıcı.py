@@ -24,15 +24,15 @@ async def buldu(c:Client, m:Message):
             if m.text.lower() == oyun[m.chat.id]["kelime"]:
                 await c.send_message(m.chat.id,f"✨ Tebrikler !\n**{m.from_user.mention}** \n**<code>{oyun[m.chat.id]['kelime']}</code>** , Sözünü Tapdi ✅")
                 if f"{m.from_user.mention}" in rating:
-                    rating[f"{m.from_user.mention}"] += 1
+                    rating[f"{m.from_user.mention}"] += 50
                 else:
-                    rating[f"{m.from_user.mention}"] = 1
+                    rating[f"{m.from_user.mention}"] = 50
                 
                 try:
                     puan = oyun[m.chat.id]["oyuncular"][str(m.from_user.mention)]
-                    oyun[m.chat.id]["oyuncular"][str(m.from_user.mention)] +=1
+                    oyun[m.chat.id]["oyuncular"][str(m.from_user.mention)] +=50
                 except KeyError:
-                    oyun[m.chat.id]["oyuncular"][str(m.from_user.mention)] = 1
+                    oyun[m.chat.id]["oyuncular"][str(m.from_user.mention)] = 50
                 
                 
                 oyun[m.chat.id]["kelime"] = kelime_sec()
