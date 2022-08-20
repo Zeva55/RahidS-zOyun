@@ -21,6 +21,6 @@ async def stop(c:Client, m:Message):
     for i in siralama:
         siralama_text += i + "\n"     
     
-    await c.send_message(m.chat.id, f"**{m.from_user.mention}** Tərəfindən Oyun dayandırıldı\n\nYeni Oyuna Başlamaq Üçün /oyna Yaza BBilərsini\n\n 📝 Xallar səyfəsi  :\n\n{siralama_text}")
+    await c.send_message(m.chat.id, f"**{m.from_user.mention}** Tərəfindən Oyun dayandırıldı\n\nYeni Oyuna Başlamaq Üçün /oyna Yaza Bilərsən\n\n 📝 Xallar səyfəsi  :\n\n{siralama_text}")
     oyun[m.chat.id] = {}
     
