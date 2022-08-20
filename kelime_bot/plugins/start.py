@@ -32,7 +32,7 @@ HELP = """
 
 /oyna - Söz tap oyunu başladır.. 
 /kec - sözü keçər.
-/skor - Oyunçular arasında rəqabət məlumatları..
+/reytinq - Oyunçular arasında rəqabət məlumatları..
 /dayan - söz tap oyununu dayandırar.
 """
 
