@@ -6,7 +6,7 @@ kelimeler = ["gözəl ","bilik","problem","təmin","ayrılmaq","zaman","su","edi
               "cərimə", "əgər", "halbuki", "qaytarmaq", "vermək", "var", "qalıq", "şəxs", "başqa", "dövr", "yenidən", "bunlar",
               "kitab", "hadisə", "olmaq", "sən", "dövlət", "ön", "çox", "baxmaq", "on", "belə", "bəzi", "başlamaq",
               "saxla", "birini", "biri", "et", "su", "bəyən", "dövlət", "sağ", "orta", "başqa", "böyük", "etmək",
-              "yeni", "daha", "soruş", "onlar", "yandır", 'soru', 'ikisi", "həmişə", "səs", "anla", "yox", "saat", "necə",
+              "yeni", "daha", "soruş", "onlar", "yandır", 'soru', 'ikisi', "həmişə", "səs", "anla", "yox", "saat", "necə",
               'bir', 'və', 'olmaq', 'bu', 'üçün', 'bu', 'mən', 'demək', 'çox', 'edmək', 'nə', 'bəyənmək', ' daha ', 'almaq',
               'var', 'öz', 'gəl', 'birlikdə', 'vermək', 'amma', 'sonra', 'qədər', 'yer', 'çox', 'insanlar', 'yox', 'hər ', 'istəmək', 'il', 'çıxmaq', 'görmək', 'gün', 'biz', 'getmək', 'işləmək', 'şey', 'o', 'bilmək', 'əl ', 'zaman',
               'ya', 'uşaq', 'iki', 'bax', 'iş', 'in', 'böyük', 'yox', 'başlanğıc', 'yol', 'qal', 'niyə', 'sən ',
