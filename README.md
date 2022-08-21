@@ -1,4 +1,4 @@
-### Telegram Kelime Oyunu @MajesteBotlar 
+### Telegram Söz Tap Oyunu @NİHAT_33 
 📝
 ## Deploy to Heroku
 
