@@ -1,11 +1,11 @@
 from pyrogram import Client
 from pyrogram import filters
 from random import shuffle
-from kingsozbot import USERNAME
+from kelime_bot import USERNAME
 from pyrogram.types import Message
-from kingsozbot.helpers.keyboards import *
-from kingsozbot.helpers.kelimeler import kelime_sec
-from kingsozbot import *
+from kelime_bot.helpers.keyboards import *
+from kelime_bot.helpers.kelimeler import kelime_sec
+from kelime_bot import *
 
 
 
