@@ -1,4 +1,4 @@
-from kelime_bot import oyun, rating
+from kingsozbot import oyun, rating
 from pyrogram import Client, filters
 
 
