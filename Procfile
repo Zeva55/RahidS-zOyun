@@ -1,1 +1,1 @@
-worker: python3 kingsozbot
+worker: python3 kelime_bot
