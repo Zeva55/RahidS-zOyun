@@ -1,4 +1,4 @@
-from kelime_bot import rating
+from kingsozbot import rating
 from pyrogram import Client
 from pyrogram import filters
 from pyrogram.types import Message
@@ -20,7 +20,7 @@ async def ratingsa(c:Client, m:Message):
             if puan == rating[kisi]:
                 metin += f"**{kisi}** : {puan}  puan\n"
                 eklenen += 50
-                if eklenen == 20:
+                if eklenen == 50:
                     break
                 
     await c.send_message(m.chat.id, metin)
