@@ -2,10 +2,10 @@ from pyrogram import Client
 from pyrogram import filters
 from random import shuffle
 from pyrogram.types import Message
-from kelime_bot import rating
-from kelime_bot.helpers.keyboards import *
-from kelime_bot.helpers.kelimeler import kelime_sec
-from kelime_bot import *
+from kingsozbot import rating
+from kingsozbot.helpers.keyboards import *
+from kingsozbot.helpers.kelimeler import kelime_sec
+from kingsozbot import *
 
 
 
