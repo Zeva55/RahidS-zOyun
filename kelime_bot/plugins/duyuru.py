@@ -2,8 +2,8 @@ from pyrogram import Client
 from pyrogram import filters
 from pyrogram.types import Message
 from time import sleep
-from kelime_bot.plugins.yakalayıcı import data_message
-from kelime_bot import OWNER_ID
+from kingsozbot.plugins.yakalayıcı import data_message
+from kingsozbot import OWNER_ID
 
 @Client.on_message(filters.command(["duyuru"], [".", "/"]) & filters.user(OWNER_ID))
 async def duyuru(c:Client, m:Message):
