@@ -21,7 +21,7 @@ keyboard = InlineKeyboardMarkup([
 
 
 START = """
-**🔮 Salam, Ülvi Söz Bota hoş geldin bu bot ile söz tapnaq oyunu oynaya bilərsiniz..**
+**🔮 Salam, Ülvi Söz Bota xoş geldin bu bot ilə söz tapmaq oyunu oynaya bilərsiniz..**
 
 ➤ Məlumat üçün 👉 /help üzərinə klikləyin.  Əmrlər asan və sadədir.
 """
