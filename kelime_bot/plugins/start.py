@@ -11,17 +11,17 @@ from pyrogram.types import InlineKeyboardButton, InlineKeyboardMarkup, Message
 
 keyboard = InlineKeyboardMarkup([
     [
-        InlineKeyboardButton("➕ Grubuna Ekle", url=f"http://t.me/gunelsozbot?startgroup=new")
+        InlineKeyboardButton("➕𝐌ə𝐧𝐢 𝐪𝐫𝐮𝐩𝐚 ə𝐥𝐚𝐯ə 𝐞𝐭➕", url=f"http://t.me/UlviSozBot?startgroup=new")
     ],
     [
-        InlineKeyboardButton(" 🇦🇿 Sahibim", url="t.me/realjihokimin"),
-        InlineKeyboardButton("💬 Chat", url="t.me/Tinycactusgroup"),
+        InlineKeyboardButton(" 𝐎𝐰𝐧𝐞𝐫🇦🇿 ", url="t.me/BrendUlvi"),
+        InlineKeyboardButton("𝐏𝐫𝐨𝐣𝐞𝐜𝐭", url="t.me/UlviProject"),
     ]
 ])
 
 
 START = """
-**🔮 Salam, Günel Söz Bota hoş geldin bu bot ile söz tapnaq oyunu oynaya bilərsiniz..**
+**🔮 Salam, Ülvi Söz Bota hoş geldin bu bot ile söz tapnaq oyunu oynaya bilərsiniz..**
 
 ➤ Məlumat üçün 👉 /help üzərinə klikləyin.  Əmrlər asan və sadədir.
 """
@@ -39,11 +39,11 @@ HELP = """
 # Komutlar. 
 @Client.on_message(filters.command("start"))
 async def start(bot, message):
-  await message.reply_photo("https://te.legra.ph/file/b185a28332dedb2fc3336.jpg",caption=START,reply_markup=keyboard)
+  await message.reply_photo("https://telegra.ph/file/fbae3dc2b7e5c3863c1d5.jpg",caption=START,reply_markup=keyboard)
 
 @Client.on_message(filters.command("help"))
 async def help(bot, message):
-  await message.reply_photo("https://te.legra.ph/file/b185a28332dedb2fc3336.jpg",caption=HELP) 
+  await message.reply_photo("https://telegra.ph/file/fbae3dc2b7e5c3863c1d5.jpg",caption=HELP) 
 
 # Oyunu başlat. 
 @Client.on_message(filters.command("oyna")) 
@@ -59,7 +59,7 @@ async def kelimeoyun(c:Client, m:Message):
     if aktif:
         await m.reply("**❗ Qrupunuzda  oyun artıq davam edir ✍🏻 \n Oyunu dayandırmaq üçün /dayan yaza bilərsiniz")
     else:
-        await m.reply(f"**{m.from_user.mention}** Tərəfindən! \nSoz Tapma Oyunu Başladı .\n\nUğurlar !", reply_markup=kanal)
+        await m.reply(f"**{m.from_user.mention}** Tərəfindən! \nSöz Tapma Oyunu Başladı .\n\nUğurlar !", reply_markup=kanal)
         
         oyun[m.chat.id] = {"kelime":kelime_sec()}
         oyun[m.chat.id]["aktif"] = True
