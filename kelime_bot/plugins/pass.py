@@ -38,7 +38,7 @@ async def passs(c:Client, m:Message):
 📝 Söz : <code>{kelime_list}</code>
 💰 Qazandığın Xal : 50
 🔎 İ𝗉𝗎𝖼𝗎 : 1. {oyun[m.chat.id]["kelime"][0]}
-✍🏻 𝖴𝗓𝗎𝗇𝗅u q : {int(len(kelime_list)/2)} 
+✍🏻 𝖴𝗓𝗎𝗇𝗅uq : {int(len(kelime_list)/2)} 
 
 ✏️ Qarışıq hərflərdən ibarət sözü tapın 
             """
