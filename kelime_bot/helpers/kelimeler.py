@@ -1,6 +1,6 @@
 import random
 kelimeler = ["gözəl ","bilik","problem","təmin","ayrılmaq","zaman","su","edin","istifadə","yox","bax",
-              "dərinizdən", "çox", "amma", "lirə", "oynamaq", "çiçək", "şəhər", "yüksək", "döyüş", "varlıq", "do",
+              "dərinizdən", "çox", "amma", "lirə", "oynamaq", "çiçək", "şəhər", "yüksək", "döyüş", "varlıq", "dönər",
               "güvən", "lazım", "müalicə", "vahid", "rahat", "soyuq", "orada", "kitab", "pay", "hesab", "bədən",
               'zəmin', 'aşdı', 'sistem', 'gözəl', 'çəkilmə', 'texnika', 'yanlaşma', 'il', 'tarix', 'dəqiq', 'bacı',
               "cərimə", "əgər", "halbuki", "qaytarmaq", "vermək", "var", "qalıq", "şəxs", "başqa", "dövr", "yenidən", "bunlar",
