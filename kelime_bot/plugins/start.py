@@ -75,11 +75,11 @@ async def kelimeoyun(c:Client, m:Message):
             kelime_list+= harf + " "
         
         text = f"""
-🎯 Raund : {oyun[m.chat.id]['round']}/100 
-📝 Söz :   <code>{kelime_list}</code>
+🎯 Raund: {oyun[m.chat.id]['round']}/100 
+📝 Söz:   <code>{kelime_list}</code>
 💰 Qazandığın Xal: 50
 🔎 İpucu: 1. {oyun[m.chat.id]["kelime"][0]}
-✍🏻 Uzunluq : {int(len(kelime_list)/2)} 
+✍🏻 Uzunluq: {int(len(kelime_list)/2)} 
 
 ✏️ Qarışıq hərflərdən ibarət sözü tapın 
         """
