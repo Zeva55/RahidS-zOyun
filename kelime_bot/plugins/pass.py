@@ -34,13 +34,13 @@ async def passs(c:Client, m:Message):
                 kelime_list+= harf + " "
             
             text = f"""
-🎯 Raund : {oyun[m.chat.id]['round']}/100 
-📝 Söz : <code>{kelime_list}</code>
-💰 Qazandığın Xal : 50
-🔎 İ𝗉𝗎𝖼𝗎 : 1. {oyun[m.chat.id]["kelime"][0]}
-✍🏻 𝖴𝗓𝗎𝗇𝗅uq : {int(len(kelime_list)/2)} 
+✏️ Qarışıq hərflərdən ibarət sözü tapın
 
-✏️ Qarışıq hərflərdən ibarət sözü tapın 
+🎯 Raund: {oyun[m.chat.id]['round']}/100 
+📝 Söz: <code>{kelime_list}</code>
+💰 Qazandığın Xal: 50
+🔎 İ𝗉𝗎𝖼𝗎: {oyun[m.chat.id]["kelime"][0]}
+✍🏻 𝖴𝗓𝗎𝗇𝗅uq: {int(len(kelime_list)/2)} 
             """
             await c.send_message(m.chat.id, text)
             
