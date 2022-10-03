@@ -64,8 +64,6 @@ async def buldu(c:Client, m:Message):
 
 ℹ️ Tapılacaq söz: <code>{kelime_list}</code>
 
-💰 Qazandığın xal: 50
-
 📄 Uzunluq: {int(len(kelime_list)/2)}
 
 💡 İlk hərf: {oyun[m.chat.id]["kelime"][0]}
