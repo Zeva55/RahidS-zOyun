@@ -1,5 +1,5 @@
 import random
-kelimeler = ["gözəl ","bilik","problem","təmin","ayrılmaq","zaman","susamaq","edin","istifadə","yox","bax",
+kelimeler = ["gözəl","bilik","problem","təmin","ayrılmaq","zaman","susamaq","edin","istifadə","yox","bax",
               "axtarmaq", "dovşan", "amma", "manat", "oynamaq", "çiçək", "şəhər", "yüksək", "döyüş", "varlıq", "güvənmək",
               "güvən", "lazım", "müalicə", "şəhid", "rahat", "soyuq", "oradan", "kitab", "payız", "hesab", "bədən",
               'zəmin', 'dəmiz', 'sistem', 'gözləmək', 'çəkinmək', 'texnika', 'yaşlanmaq', 'gətirmək', 'tarix', 'dəqiq', 'başlıq',
@@ -11,7 +11,7 @@ kelimeler = ["gözəl ","bilik","problem","təmin","ayrılmaq","zaman","susamaq"
               'dəyərli', 'peşman', 'gülmək', 'birlikdə', 'vermək', 'amma', 'sonra', 'qədər', 'yer', 'çoxluq', 'insanlar', 'bizim', 'hər ', 'istəmək', 'il', 'çıxmaq', 'görmək', 'gün', 'biz', 'getmək', 'işləmək', 'yayım', 'oxşamaq', 'bilmək', 'sənətkar', 'zaman',
               'dinləmək', 'uşaq', 'iki', 'dözmək', 'birlik', 'səbr', 'böyük', 'sevilmək', 'başlanğıc', 'yol', 'qal', 'niyə', 'sən',
               'mövzu', 'ibarət', 'yaxşı', 'qadın', 'ev', 'olmaq', 'qeyrət', 'demək', 'göz', 'lazım', 'dünya',
-              "yemək', 'heç', 'hətta', 'necə', 'hamısı', 'əleyhinə', 'tapmaq', 'belə', 'yaşamaq', 'düşünmək', 'eyni', 'içmək', 'lakin",
+              'yemək', 'heç', 'hətta', 'necə', 'hamısı', 'əleyhinə', 'tapmaq', 'belə', 'yaşamaq', 'düşünmək', 'eyni', 'içmək', 'lakin',
               'iman', 'onlar', 'birinci', 'görə', 'ölmək', 'son', 'bəhanə', 'forma', 'vacib', 'üz', 'futboı', 'göstərmək', 'etmək',
               'alma', 'günah', 'istifadə', 'çünkü', 'yan', 'indi', 'kişi', 'onun', 'başqası', 'xəyanət', 'bağışlamaq', 'oğur', 'həmişəlik',
               'sağ', 'durmaq', 'qız', 'hamısı', 'cəlb', 'göstəriş', 'danışmaq', 'pul', 'anlamaq', 'ana', 'ilan', 'bəzi', 'ata', 'həyat ',
@@ -90,7 +90,7 @@ kelimeler = ["gözəl ","bilik","problem","təmin","ayrılmaq","zaman","susamaq"
               'balans', 'geriyə', 'çünki', 'qəhvə', 'əzələ', 'montaj', 'başqa', 'işləmək', 'ünvan',
               'paşa', 'istilik', 'ok', 'güvən', 'marka', 'yarpaq', 'fayda', 'yaymaq', 'axan', 'çəkmək', 'düşünmək',
               'ürək', 'arzu', 'tərəfsiz', 'şərab', 'yuxarı', 'qızıl', 'almaq', 'təmiz',
-              'vitamin', 'əlavə', 'gec', 'aktyor', 'yumurta', 'hərəkət', 'kabab', 'kəsmə', "böhran", 'şirniyyat',
+              'vitamin', 'əlavə', 'gec', 'aktyor', 'yumurta', 'hərəkət', 'kabab', 'kəsmə', 'böhran', 'şirniyyat',
               'söndürmək'
              ]
 
