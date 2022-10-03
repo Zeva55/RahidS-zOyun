@@ -11,11 +11,11 @@ from pyrogram.types import InlineKeyboardButton, InlineKeyboardMarkup, Message
 
 keyboard = InlineKeyboardMarkup([
     [
-        InlineKeyboardButton("➕𝐌ə𝐧𝐢 𝐪𝐫𝐮𝐩𝐚 ə𝐥𝐚𝐯ə 𝐞𝐭➕", url=f"http://t.me/Rahid_Word_Bot?startgroup=new")
+        InlineKeyboardButton("➕ Qupuna əlavə et ➕", url=f"http://t.me/Rahid_Word_Bot?startgroup=new")
     ],
     [
-        InlineKeyboardButton(" 𝐎𝐰𝐧𝐞𝐫🇦🇿 ", url="t.me/Rahid_2003"),
-        InlineKeyboardButton("𝐃𝐢𝐠𝐞𝐫 𝐁𝐨𝐭𝐥𝐚𝐫", url="t.me/Rahid_44"),
+        InlineKeyboardButton(" Sahib 🇦🇿 ", url="t.me/Rahid_2003"),
+        InlineKeyboardButton("Digər Botlar 🤖", url="t.me/Rahid_44"),
     ]
 ])
 
@@ -33,7 +33,7 @@ HELP = """
 /oyna - Oyunu başlat.
 /kec - Sözü dəyiş.
 /reytinq - Oyunçular arasında rəqabət məlumatları.
-/dayan - Oyunu dayandırar.
+/dayan - Oyunu dayandır.
 """
 
 # Komutlar. 
@@ -75,13 +75,15 @@ async def kelimeoyun(c:Client, m:Message):
             kelime_list+= harf + " "
         
         text = f"""
+✏️ Qarışıq hərflərdən ibarət sözü tapın
+
 🎯 Raund: {oyun[m.chat.id]['round']}/100 
-📝 Söz:   <code>{kelime_list}</code>
+📝 Söz: <code>{kelime_list}</code>
 💰 Qazandığın Xal: 50
-🔎 İpucu: 1. {oyun[m.chat.id]["kelime"][0]}
+🔎 İpucu: {oyun[m.chat.id]["kelime"][0]}
 ✍🏻 Uzunluq: {int(len(kelime_list)/2)} 
 
-✏️ Qarışıq hərflərdən ibarət sözü tapın 
+@Cenublar qrupumuza dəvətlisiniz
         """
         await c.send_message(m.chat.id, text)
         
