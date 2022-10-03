@@ -21,19 +21,19 @@ keyboard = InlineKeyboardMarkup([
 
 
 START = """
-**🔮 Salam, bu bot ilə qrupda vaxtınızı maraqlı keçirə bilərsiniz..**
+**🔮 Salam, bu bot ilə qrupda vaxtınızı maraqlı keçirə bilərsiniz🥳**
 
-➤ Məlumat üçün 👉 /help üzərinə klikləyin.  Əmrlər asan və sadədir.
+➤ Məlumat üçün 👉 /help üzərinə klikləyin əmrlər asan və sadədir ✔️
 """
 
 HELP = """
 **ℹ️ Əmrlər menyusu**
 
 
-/oyna - Oyunu başlat.
-/kec - Sözü dəyiş.
-/reytinq - Oyunçular arasında rəqabət məlumatları.
-/dayan - Oyunu dayandır.
+/oyna - Oyunu başlat
+/kec - Sözü dəyiş
+/reytinq - Oyunçular arasında rəqabət məlumatlar
+/dayan - Oyunu dayandır
 """
 
 # Komutlar. 
@@ -59,7 +59,7 @@ async def kelimeoyun(c:Client, m:Message):
     if aktif:
         await m.reply("**❗ Qrupunuzda oyun artıq davam edir!\nOyunu dayandırmaq üçün /dayan yazın")
     else:
-        await m.reply(f"**{m.from_user.mention}**Tərəfindən\nsöz oyunu başladı\n\nUğurlar🥳", reply_markup=kanal)
+        await m.reply(f"**{m.from_user.mention} **tərəfindən\nsöz oyunu başladı\n\nUğurlar🥳", reply_markup=kanal)
         
         oyun[m.chat.id] = {"kelime":kelime_sec()}
         oyun[m.chat.id]["aktif"] = True
