@@ -91,7 +91,7 @@ kelimeler = ["gözəl","bilik","problem","təmin","ayrılmaq","zaman","susamaq",
               'paşa', 'istilik', 'ok', 'güvən', 'marka', 'yarpaq', 'fayda', 'yaymaq', 'axan', 'çəkmək', 'düşünmək',
               'ürək', 'arzu', 'tərəfsiz', 'şərab', 'yuxarı', 'qızıl', 'almaq', 'təmiz',
               'vitamin', 'əlavə', 'gec', 'aktyor', 'yumurta', 'hərəkət', 'kabab', 'kəsmə', 'böhran', 'şirniyyat',
-              'söndürmək'
+              'söndürmək',
              ]
 
 
