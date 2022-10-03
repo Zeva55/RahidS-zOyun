@@ -17,20 +17,20 @@ async def duyuru(c:Client, m:Message):
         mesaj = m.reply_to_message.text
     else:
         mesaj = m.text[8:]
-    await c.send_message(m.chat.id,f"**Göndəriləcək Qrupların Sayı:  {len(chats_list)}\nMesajınız:**\n\n__{mesaj}__")
+    await c.send_message(m.chat.id,f"**Göndəriləcək qrupların sayı: {len(chats_list)}\nMesajınız:**\n\n__{mesaj}__")
 
 
 
     #----> Gönderme İşlemi <----
-    bas =await c.send_message(m.chat.id, "**Elan Başladı.**")
+    bas =await c.send_message(m.chat.id, "**Elan başladı.**")
     for chat in chats_list:
         try:
             await c.send_message(chat, mesaj, disable_web_page_preview=True)
-            await bas.edit(f"**Elan Başladı.**\n\nGöndərildi: {chat}")
+            await bas.edit(f"**Elan başladı.**\n\nGöndərildi: {chat}")
         except:
             pass
         sleep(2)
-    await c.send_message(m.chat.id, "**Elan Prosesi Bitdi. Elanınız Bütün Qruplara Göndərilib.**")
+    await c.send_message(m.chat.id, "**Elan prosesi bitdi, Elanınız bütün qruplara göndərilib.**")
     
     
     
@@ -48,16 +48,16 @@ async def fduyuru(c:Client, m:Message):
         mesaj = "t.me/" + str(m.chat.username) + "/" + str(message_id)
     else:
         return m.reply("**Yönləndirmə kimi elan etmək üçün mesaja cavab verin !!**")
-    await c.send_message(m.chat.id,f"**Göndəriləcək Qrupların Sayı:  {len(chats_list)}\nMesajınız: [Basın]({mesaj})**", disable_web_page_preview=True)
+    await c.send_message(m.chat.id,f"**Göndəriləcək qrupların sayı: {len(chats_list)}\nMesajınız: [Basın]({mesaj})**", disable_web_page_preview=True)
 
 
     #----> Gönderme İşlemi <----
-    bas = await c.send_message(m.chat.id, "**Elan Başladı.**")
+    bas = await c.send_message(m.chat.id, "**Elan başladı.**")
     for chat in chats_list:
         try:
             await c.forward_messages(chat,m.chat.id, message_id)
-            await bas.edit(f"**Elan Başladı.**\n\nGöndərildi: {chat}")
+            await bas.edit(f"**Elan başladı.**\n\nGöndərildi: {chat}")
         except:
             pass
         sleep(2)
-    await c.send_message(m.chat.id, "**Elan Prosesi Bitdi.Elanınız Bütün Qruplara Göndərilib.**")
+    await c.send_message(m.chat.id, "**Elan prosesi bitdi, Elanınız bütün qruplara göndərilib.**")
