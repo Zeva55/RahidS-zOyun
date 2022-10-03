@@ -83,7 +83,7 @@ async def kelimeoyun(c:Client, m:Message):
 🔎 İpucu: {oyun[m.chat.id]["kelime"][0]}
 ✍🏻 Uzunluq: {int(len(kelime_list)/2)} 
 
-@Cenublar qrupumuza dəvətlisiniz
+@Cenublar qrupumuza dəvətlisiniz❤️
         """
         await c.send_message(m.chat.id, text)
         
