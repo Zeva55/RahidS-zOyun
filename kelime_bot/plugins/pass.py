@@ -34,13 +34,13 @@ async def passs(c:Client, m:Message):
                 kelime_list+= harf + " "
             
             text = f"""
-✏️ Qarışıq hərflərdən ibarət sözü tapın
+🔎 ǫᴀʀışıǫ söᴢʟəʀi ᴛᴀᴘ
 
-🎯 Raund: {oyun[m.chat.id]['round']}/100 
-📝 Söz: <code>{kelime_list}</code>
-💰 Qazandığın Xal: 50
-🔎 İ𝗉𝗎𝖼𝗎: {oyun[m.chat.id]["kelime"][0]}
-✍🏻 𝖴𝗓𝗎𝗇𝗅uq: {int(len(kelime_list)/2)} 
+🎯 ʀᴀᴜɴᴅ: {oyun[m.chat.id]['round']}/100 
+ℹ️ ᴛᴀᴘıʟᴀᴄᴀǫ söᴢ: <code>{kelime_list}</code>
+💰 ǫᴀᴢᴀɴᴅɪɢ̆ɪɴ xᴀʟ: 50
+📄 ᴜᴢᴜɴʟᴜǫ: {int(len(kelime_list)/2)} 
+💡 ɪʟᴋ ʜəʀғ: {oyun[m.chat.id]["kelime"][0]}
 
 @Cenublar qrupumuza dəvətlisiniz❤️
             """
