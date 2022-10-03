@@ -22,7 +22,7 @@ async def buldu(c:Client, m:Message):
     try:
         if m.chat.id in oyun:
             if m.text.lower() == oyun[m.chat.id]["kelime"]:
-                await c.send_message(m.chat.id,f"✨ Təbriklər !\n**{m.from_user.mention}** \n**<code>{oyun[m.chat.id]['kelime']}</code>** , Sözü Tapdı ✅")
+                await c.send_message(m.chat.id,f"🥳 Təbriklər\n**{m.from_user.mention}** \n**<code>{oyun[m.chat.id]['kelime']}</code>** sözü tapdı ✅")
                 if f"{m.from_user.mention}" in rating:
                     rating[f"{m.from_user.mention}"] += 50
                 else:
@@ -47,7 +47,7 @@ async def buldu(c:Client, m:Message):
                     for i in siralama:
                         siralama_text += i + "\n"
                     
-                    return await c.send_message(m.chat.id,f"✅ Oyun Bitdi✓ \n\n📝 Puan :\n\n{siralama_text}\n\n Yeni oyuna başlamaq üçün /oyna yazın")
+                    return await c.send_message(m.chat.id,f"✅ Oyun bitdi ✓ \n\n🏆 Qaliblər :\n\n{siralama_text}\n\nYeni oyuna başlamaq üçün /oyna yazın")
                 
                 
                 
