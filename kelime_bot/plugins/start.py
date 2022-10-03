@@ -75,13 +75,17 @@ async def kelimeoyun(c:Client, m:Message):
             kelime_list+= harf + " "
         
         text = f"""
-🔎 ǫᴀʀışıǫ söᴢʟəʀi ᴛᴀᴘ
+🔎 Qarışıq sözləri tap
 
-🎯 ʀᴀᴜɴᴅ: {oyun[m.chat.id]['round']}/100 
-ℹ️ ᴛᴀᴘıʟᴀᴄᴀǫ söᴢ: <code>{kelime_list}</code>
-💰 ǫᴀᴢᴀɴᴅɪɢ̆ɪɴ xᴀʟ: 50
-📄 ᴜᴢᴜɴʟᴜǫ: {int(len(kelime_list)/2)} 
-💡 ɪʟᴋ ʜəʀғ: {oyun[m.chat.id]["kelime"][0]}
+🎯 Raund: {oyun[m.chat.id]['round']}/100
+
+ℹ️ Tapılacaq söz: <code>{kelime_list}</code>
+
+💰 Qazandığın xal: 50
+
+📄 Uzunluq: {int(len(kelime_list)/2)}
+
+💡 İlk hərf: {oyun[m.chat.id]["kelime"][0]}
 
 @Cenublar qrupumuza dəvətlisiniz❤️
         """
