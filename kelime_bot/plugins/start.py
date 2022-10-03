@@ -32,8 +32,8 @@ HELP = """
 
 /oyna - Oyunu başlat
 /kec - Sözü dəyiş
-/reytinq - Oyunçular arasında rəqabət məlumatlar
 /dayan - Oyunu dayandır
+/reytinq - Oyunçular arasında rəqabət məlumatlar
 """
 
 # Komutlar. 
