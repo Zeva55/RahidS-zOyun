@@ -44,8 +44,7 @@ async def passs(c:Client, m:Message):
 
 💡 İlk hərf: {oyun[m.chat.id]["kelime"][0]}
             """
-            
-                        keyboard = InlineKeyboardMarkup(
+            keyboard = InlineKeyboardMarkup(
                       [
             [
                 InlineKeyboardButton("✅ Digər Botlar", url=f"https://t.me/Rahid_44"),
