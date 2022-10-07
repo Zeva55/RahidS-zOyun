@@ -44,14 +44,6 @@ async def passs(c:Client, m:Message):
 
 💡 İlk hərf: {oyun[m.chat.id]["kelime"][0]}
             """
-                
-from pyrogram.types import InlineKeyboardButton
-from pyrogram.types import InlineKeyboardMarkup
-
-kanal = InlineKeyboardMarkup([
-    [InlineKeyboardButton("Əyləncə qrupumuz 🥳" , url= "t.me/cenublar")]
-])
-
             await c.send_message(m.chat.id, text)
             
         else:
