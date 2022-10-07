@@ -43,9 +43,18 @@ async def passs(c:Client, m:Message):
 📄 Uzunluq: {int(len(kelime_list)/2)}
 
 💡 İlk hərf: {oyun[m.chat.id]["kelime"][0]}
-
-                InlineKeyboardButton("✅ Digər Botlar", url=f"https://t.me/Rahid_44"),
             """
+            
+                        keyboard = InlineKeyboardMarkup(
+                      [
+            [
+                InlineKeyboardButton("✅ Digər Botlar", url=f"https://t.me/Rahid_44"),
+                InlineKeyboardButton("🆘 Support", url=f"https://t.me/Rahid_Support"),
+            ],[
+                InlineKeyboardButton("🗑️ Menyunu Bağla", callback_data="cls"),
+            ],
+        ]
+    )
             await c.send_message(m.chat.id, text)
             
         else:
