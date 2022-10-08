@@ -7,15 +7,20 @@ from pyrogram.types import Message
 @Client.on_message(filters.command("reytinq"))
 async def ratingsa(c:Client, m:Message):
     global rating
-    metin = """📝 Qlobal qruplar üzrə ən yaxşı oyunçular
-"""
-(`
+    metin = """📝 Quplar üzrə ən yaxşı oyunçular
 
-${(top).sort((a, b) => b.score - a.score).slice(0, 30).map((member, index) => `${["🥇","🥈","🥉"][index] || "🎲"} ${index + 1}) <b><i>${member.firstName} → ${member.score} ${HusnuEhedov(member.score, "puan", "puan", "puan")}</i></b>`).join("\n")}
-                `))
-            }
-        }
-    })
-})
+"""
+   eklenen = 0
+    puanlar = []
+    for kisi in rating:
+        puanlar.append(rating[kisi])
+    puanlar.sort(reverse = True)
+    for puan in puanlar:
+        for kisi in rating:
+            if puan == rating[kisi]:
+                metin += f"**{kisi}** : {puan}  puan\n"
+                eklenen += 50
+                if eklenen == 30:
+                    break
                 
     await c.send_message(m.chat.id, metin)
