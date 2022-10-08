@@ -58,15 +58,11 @@ async def buldu(c:Client, m:Message):
                     kelime_list+= harf + " "
             
                 text = f"""
-🔎 Qarışıq sözləri tap
-
 🎯 Raund: {oyun[m.chat.id]['round']}/100
-
-ℹ️ Tapılacaq söz: <code>{kelime_list}</code>
-
-📄 Uzunluq: {int(len(kelime_list)/2)}
-
-💡 İlk hərf: {oyun[m.chat.id]["kelime"][0]}
+🌠 Tapılacaq Söz: <code>{kelime_list}</code>
+📌 İpucu: {oyun[m.chat.id]["kelime"][0]}
+🔗 Uzunluq: {int(len(kelime_list)/2)}
+⏳ Qarışıq yazılmış bu hərflərdən əsas sözü tapmağa çalış!
                         """
                 await c.send_message(m.chat.id, text)
     except KeyError:
