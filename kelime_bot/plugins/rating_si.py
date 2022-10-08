@@ -10,17 +10,12 @@ async def ratingsa(c:Client, m:Message):
     metin = """📝 Qlobal qruplar üzrə ən yaxşı oyunçular
 
 """
-    eklenen = 0
-    puanlar = []
-    for kisi in rating:
-        puanlar.append(rating[kisi])
-    puanlar.sort(reverse = True)
-    for puan in puanlar:
-        for kisi in rating:
-            if puan == rating[kisi]:
-                metin += f"**{kisi}** : {puan}  puan\n"
-                eklenen += 50
-                if eklenen == 30:
-                    break
+
+${(top).sort((a, b) => b.score - a.score).slice(0, 20).map((member, index) => `${["🥇","🥈","🥉"][index] || "🎲"} ${index + 1}) <b><i>${member.firstName} → ${member.score} ${HusnuEhedov(member.score, "puan", "puan", "puan")}</i></b>`).join("\n")}
+                `))
+            }
+        }
+    })
+})
                 
     await c.send_message(m.chat.id, metin)
