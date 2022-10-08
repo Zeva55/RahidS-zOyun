@@ -23,11 +23,11 @@ keyboard = InlineKeyboardMarkup([
 START = """
 **🔮 Salam, bu bot ilə qrupda vaxtınızı maraqlı keçirə bilərsiniz🥳**
 
-➤ Məlumat üçün 👉 /help üzərinə klikləyin əmrlər asan və sadədir ✔️
+➤ Məlumat üçün 👉 /help üzərinə klikləyin əmrlər asan və sadədir👍
 """
 
 HELP = """
-**ℹ️ Əmrlər menyusu**
+**ℹ️ Əmrlər Menyusu**
 
 
 /oyna - Oyunu başlat
@@ -57,7 +57,7 @@ async def kelimeoyun(c:Client, m:Message):
         aktif = False
 
     if aktif:
-        await m.reply("**❗ Qrupunuzda oyun artıq davam edir!\nOyunu dayandırmaq üçün /dayan yazın")
+        await m.reply("**❗ Qrupunuzda oyun  onsuzda davam edir!\nOyunu dayandırıb yenidən başlamaq üçün /dayan yazın vəya oyuna davam etmək üçün /kec yazın")
     else:
         await m.reply(f"**{m.from_user.mention} **tərəfindən\nsöz oyunu başladı\n\nUğurlar🥳", reply_markup=kanal)
         
@@ -75,15 +75,11 @@ async def kelimeoyun(c:Client, m:Message):
             kelime_list+= harf + " "
         
         text = f"""
-🔎 Qarışıq sözləri tap
-
 🎯 Raund: {oyun[m.chat.id]['round']}/100
-
-ℹ️ Tapılacaq söz: <code>{kelime_list}</code>
-
-📄 Uzunluq: {int(len(kelime_list)/2)}
-
-💡 İlk hərf: {oyun[m.chat.id]["kelime"][0]}
+🌠 Tapılacaq Söz: <code>{kelime_list}</code>
+📌 İpucu: {oyun[m.chat.id]["kelime"][0]}
+🔗 Uzunluq: {int(len(kelime_list)/2)}
+⏳ Qarışıq yazılmış bu hərflərdən əsas sözü tapmağa çalış!
         """
         await c.send_message(m.chat.id, text)
         
