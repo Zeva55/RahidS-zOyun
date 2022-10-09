@@ -29,7 +29,6 @@ START = """
 HELP = """
 **ℹ️ Əmrlər Menyusu**
 
-
 /oyna - Oyunu başlat
 /kec - Sözü dəyiş
 /dayan - Oyunu dayandır
