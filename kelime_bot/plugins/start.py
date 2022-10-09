@@ -59,7 +59,7 @@ async def kelimeoyun(c:Client, m:Message):
     if aktif:
         await m.reply("**❗ Qrupunuzda oyun  onsuzda davam edir!\nOyunu dayandırıb yenidən başlamaq üçün /dayan yazın vəya oyuna davam etmək üçün /kec yazın")
     else:
-        await m.reply(f"**{m.from_user.mention} **tərəfindən\nsöz oyunu başladı\n\nUğurlar🥳", reply_markup=kanal)
+        await m.reply(f"**{m.from_user.mention} **tərəfindən\nsöz oyunu başladı !", reply_markup=kanal)
         
         oyun[m.chat.id] = {"kelime":kelime_sec()}
         oyun[m.chat.id]["aktif"] = True
