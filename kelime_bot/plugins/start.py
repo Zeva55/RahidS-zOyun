@@ -29,10 +29,10 @@ START = """
 HELP = """
 **ℹ️ Əmrlər Menyusu**
 
-/oyna - Oyunu başlat
-/kec - Sözü dəyiş
-/dayan - Oyunu dayandır
-/reytinq - Oyunçular arasında rəqabət məlumatlar
+➔  /oyna - oyunu başlatmaq
+➔  /kec - sözü dəyişdirmək
+➔  /dayan - oyunu dayandırmaq
+➔  /reytinq - bütün qruplar üzrə oyunçuların xallarına baxmaq
 """
 
 # Komutlar. 
