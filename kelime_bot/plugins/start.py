@@ -11,11 +11,11 @@ from pyrogram.types import InlineKeyboardButton, InlineKeyboardMarkup, Message
 
 keyboard = InlineKeyboardMarkup([
     [
-        InlineKeyboardButton("➕ Qrupuna əlavə et ➕", url=f"http://t.me/Rahid_Word_Bot?startgroup=new")
+        InlineKeyboardButton("➕ Qrupa Əlavə Et ➕", url=f"http://t.me/Rahid_Word_Bot?startgroup=new")
     ],
     [
-        InlineKeyboardButton(" Sahib 🇦🇿 ", url="t.me/Rahid_2003"),
-        InlineKeyboardButton("Digər Botlar 🤖", url="t.me/Rahid_44"),
+        InlineKeyboardButton(" Sahib 🙇🏻", url="t.me/Rahid_2003"),
+        InlineKeyboardButton("Digər Botlar 🌐", url="t.me/Rahid_44"),
     ]
 ])
 
@@ -56,7 +56,7 @@ async def kelimeoyun(c:Client, m:Message):
         aktif = False
 
     if aktif:
-        await m.reply("**❗ Qrupunuzda oyun  onsuzda davam edir!\nOyunu dayandırıb yenidən başlamaq üçün /dayan yazın vəya oyuna davam etmək üçün /kec yazın")
+        await m.reply("**❗ Qrupunuzda oyun  onsuzda davam edir!\n/oyna əmri ilə oyunu yenidən başlatın")
     else:
         await m.reply(f"**{m.from_user.mention} **tərəfindən\nsöz oyunu başladı !", reply_markup=kanal)
         
