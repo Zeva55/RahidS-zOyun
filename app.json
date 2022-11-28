@@ -3,23 +3,23 @@
   "logo": "https://telegra.ph/file/1cc86bcc6714c3a2bb724.jpg",
   "description": "Telegram söz tap oyun",
   "env": {
-    "API_ID": {
+    "API_ID": 16421462 {
       "description": "@otomytelegrambot dan api hash api id alınız.",
       "value": ""
     },
-    "API_HASH": {
+    "API_HASH":cc464d82989c88a392f59133591895a2 {
       "description": "@otomytelegrambot dan api hash api id alınız.",
       "value": ""
     },
-    "TOKEN": {
+    "TOKEN":5606110930:AAHB09z9X5Ubf245HVIck7ZOb-fus6fTZ2U {
       "description": "@botfather den aldığınız tokeni giriniz",
       "value": ""
     },
-    "USERNAME": {
+    "USERNAME": @yusifpiriyev {
       "description": "Kullanıcı adınızı giriniz.",
       "value": ""
     },
-    "OWNER_ID": {
+    "OWNER_ID": 59133591895 {
       "description": "Bot Sahibinin İD girin.",
       "value": ""
     }
