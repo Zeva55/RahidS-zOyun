@@ -1,6 +1,6 @@
 {
   "name": "Söz dünyası",
-  "logo": "https://telegra.ph/file/1cc86bcc6714c3a2bb724.jpg",
+  "logo": 
   "description": "Telegram söz tap oyun",
   "env": {
     "API_ID": 16421462 {
@@ -15,11 +15,11 @@
       "description": "@botfather den aldığınız tokeni giriniz",
       "value": ""
     },
-    "USERNAME": @yusifpiriyev {
+    "USERNAME": {
       "description": "Kullanıcı adınızı giriniz.",
       "value": ""
     },
-    "OWNER_ID": 59133591895 {
+    "OWNER_ID": {
       "description": "Bot Sahibinin İD girin.",
       "value": ""
     }
